@@ -3,10 +3,44 @@
 <ng-template #desligado>
     <p>O servidor esta Desligado</p>
 </ng-template>
-<button  (click)="toggle()">Ligar/Desligar</button>
+<button (click)="toggle()">Ligar/Desligar</button>
 
-<hr/>
+<hr />
 
 <p>{{counter}}</p>
 
 <button (click)="incrementar()">Incrementar</button>
+
+<hr />
+
+<h4>Lista de compras</h4>
+
+<ul>
+    <li *ngFor="let produto of listaDeCompras">
+        {{produto}}
+    </li>
+</ul>
+
+
+<table class="table-alunos">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Média</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let aluno of alunos; index as i">
+            <td>{{i + 1}}</td>
+            <td>{{aluno.nome}}</td>
+            <td>{{aluno.email}}</td>
+            <td>{{aluno.media}}</td>
+            <td>
+                <button (click)="alertar(aluno)">Alertar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
