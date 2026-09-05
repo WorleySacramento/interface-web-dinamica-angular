@@ -32,5 +32,8 @@ export class DiretivasComponent {
     alert(`Aluno: ${aluno.nome}\nEmail: ${aluno.email}\nMédia: ${aluno.media}`);
   }
 
+  opcoes: string[] = ['Opção 1', 'Opção 2', 'Opção 3', 'Opção 4'];
+  opcaoSelecionada: string = 'nenhum';
+
 }
 
