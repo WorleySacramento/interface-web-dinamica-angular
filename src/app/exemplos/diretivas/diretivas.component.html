@@ -33,11 +33,18 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let aluno of alunos; index as i">
+        <tr *ngFor="let aluno of alunos; index as i"
+        [ngStyle]="{}"
+        >
             <td>{{i + 1}}</td>
             <td>{{aluno.nome}}</td>
             <td>{{aluno.email}}</td>
-            <td>{{aluno.media}}</td>
+            <td
+            [ngClass]="{'aprovado': aluno.media >= 7,
+                'reprovado':aluno.media < 7}"
+            >
+            {{aluno.media}}
+            </td>
             <td>
                 <button (click)="alertar(aluno)">Alertar</button>
             </td>

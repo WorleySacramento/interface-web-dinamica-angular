@@ -21,10 +21,10 @@ export class DiretivasComponent {
   }
 
   alunos: Aluno[] =[
-    { nome: 'João', email: 'joao@email.com', media: 8.5 },
+    { nome: 'João', email: 'joao@email.com', media: 5.5 },
     { nome: 'Maria', email: 'maria@email.com', media: 9.0 },
     { nome: 'Pedro', email: 'pedro@email.com', media: 7.5 },
-    { nome: 'Ana', email: 'ana@email.com', media: 8.0 },
+    { nome: 'Ana', email: 'ana@email.com', media: 6.0 },
     { nome: 'Carlos', email: 'carlos@email.com', media: 8.5 }
   ]
 

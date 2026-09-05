@@ -17,3 +17,12 @@
     background-color: teal;
     color: white;
 }
+
+.aprovado{
+    color: green;
+}
+
+.reprovado{
+    color: red;
+    font-weight: bold;
+}
