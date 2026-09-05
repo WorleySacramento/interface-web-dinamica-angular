@@ -1,0 +1,12 @@
+<p *ngIf="estaLigado; else desligado">Servidor esta ligado!</p>
+
+<ng-template #desligado>
+    <p>O servidor esta Desligado</p>
+</ng-template>
+<button  (click)="toggle()">Ligar/Desligar</button>
+
+<hr/>
+
+<p>{{counter}}</p>
+
+<button (click)="incrementar()">Incrementar</button>
