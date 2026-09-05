@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { DiretivasComponent } from './exemplos/diretivas/diretivas.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PipesComponent } from './exemplos/pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SobreComponent,
     ProdutoComponent,
     FooterComponent,
-    DiretivasComponent
+    DiretivasComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
