@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 export class ProdutoComponent {
   nomeProduto: string = 'Produto Exemplo';
   precoProduto: number = 9.99;
-  linkImagem: string = 'https://picsum.photos/100';
+  linkImagem: string = 'https://picsum.photos/200/';
 
-  larguraImagem: number = 50;
-  alturaImagem: number = 80;
+  larguraImagem: number = 100;
+  alturaImagem: number = 100;
   
   addProduto() {
     this.larguraImagem += 100;
