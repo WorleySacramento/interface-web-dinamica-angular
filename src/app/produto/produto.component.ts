@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Produto } from '../models/produto';
 
 @Component({
   selector: 'app-produto',
@@ -6,20 +7,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./produto.component.css']
 })
 export class ProdutoComponent {
+  @Input() produto!: Produto;
+  @Output() addToCart = new EventEmitter<Produto>();
+
+
   nomeProduto: string = 'Produto Exemplo';
   precoProduto: number = 9.99;
   linkImagem: string = 'https://picsum.photos/200/';
 
-  larguraImagem: number = 100;
-  alturaImagem: number = 100;
   
   addProduto() {
-    this.larguraImagem += 100;
-    this.alturaImagem += 100;
     alert('Produto adicionado ao carrinho!');
+    this.addToCart.emit(this.produto);
   }
 
-  promocao(){
-    confirm('Deseja adicionar o produto à promoção?');
-  }
+  // promocao(){
+  //   confirm('Deseja adicionar o produto à promoção?');
+  // }
 }

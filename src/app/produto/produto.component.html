@@ -1,12 +1,9 @@
-<div>
-    <img 
-    [src]="linkImagem"
-    [width]="larguraImagem"
-    [height]="alturaImagem"
-     />
-    <p>{{nomeProduto}}</p>
-    <p>R$ {{precoProduto}}</p>
 
-    <br/>
-    <button (click)="addProduto()">Adicionar ao carrinho</button>
+<div class="card my-2" style="width: 18rem;">
+  <img [src]="produto.imagem" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{produto.nome}}</h5>
+    <p class="card-text">R$ {{produto.preco}}</p>
+    <button class="btn btn-primary" (click)="addProduto()">Adicionar ao carrinho</button>
+  </div>
 </div>
