@@ -10,5 +10,6 @@
     [produto]="produto"
     (addToCart)="adicionarProduto($event)"
     >
+    <small *ngIf="contemNoCarrinho(produto)">O produto esta no carrinho</small>
     </app-produto>
 </div>

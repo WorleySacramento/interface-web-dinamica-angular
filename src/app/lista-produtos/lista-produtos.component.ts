@@ -92,4 +92,8 @@ export class ListaProdutosComponent {
     console.log('Produto adicionado ao carrinho:', produto);
     this.carrinho.push(produto);
   }
+
+  contemNoCarrinho(produto: Produto): boolean {
+    return this.carrinho.indexOf(produto) > -1;
+  }
 }
