@@ -13,6 +13,8 @@ import { FormsModule } from '@angular/forms';
 import { DiretivasComponent } from './exemplos/diretivas/diretivas.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PipesComponent } from './exemplos/pipes/pipes.component';
+import { OcultarEmailPipe } from './pipes/ocultar-email.pipe';
+import { LimitarTextoPipe } from './pipes/limitar-texto.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { PipesComponent } from './exemplos/pipes/pipes.component';
     ProdutoComponent,
     FooterComponent,
     DiretivasComponent,
-    PipesComponent
+    PipesComponent,
+    OcultarEmailPipe,
+    LimitarTextoPipe
   ],
   imports: [
     BrowserModule,

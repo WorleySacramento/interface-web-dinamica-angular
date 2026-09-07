@@ -11,4 +11,13 @@ export class PipesComponent {
   valor: number = 1234.56;
   mensagem: string = 'Olá, mundo!';
   salario: number = 5000;
+  email: string = 'usuario@exemplo.com';
+
+  
+
+  // ocultarEmail(email: string): string {
+  //   const [usuario, dominio] = email.split('@');
+  //   const usuarioOculto = usuario[0] + '******';
+  //   return `${usuarioOculto}@${dominio}`;
+  // }
 }
