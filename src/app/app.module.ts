@@ -15,6 +15,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PipesComponent } from './exemplos/pipes/pipes.component';
 import { OcultarEmailPipe } from './pipes/ocultar-email.pipe';
 import { LimitarTextoPipe } from './pipes/limitar-texto.pipe';
+import { SomarArrayPipe } from './pipes/somar-array.pipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LimitarTextoPipe } from './pipes/limitar-texto.pipe';
     DiretivasComponent,
     PipesComponent,
     OcultarEmailPipe,
-    LimitarTextoPipe
+    LimitarTextoPipe,
+    SomarArrayPipe
   ],
   imports: [
     BrowserModule,

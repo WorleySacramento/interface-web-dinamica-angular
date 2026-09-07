@@ -11,5 +11,13 @@
 
     <p>{{'email1234@email.com' | ocultarEmail}}</p>
     <p>{{mensagem | limitarTexto: 5}}</p>
+    <p>A soma dos valores: {{valores | somarArray}}</p>
+    
+    <input 
+    type="text" 
+    placeholder="Digite um valor"
+    [(ngModel)]="numeroDigitado"
+    />
+    <button (click)="inseririr()">Inserir numeros</button>
 
 </div>

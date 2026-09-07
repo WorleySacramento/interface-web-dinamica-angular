@@ -13,6 +13,13 @@ export class PipesComponent {
   salario: number = 5000;
   email: string = 'usuario@exemplo.com';
 
+  valores: number[] = [1, 2, 3, 4, 5, 6];
+  numeroDigitado: string = '';
+  inseririr(){
+    this.valores.push(Number(this.numeroDigitado));
+    console.log(this.valores);
+  }
+
   
 
   // ocultarEmail(email: string): string {
